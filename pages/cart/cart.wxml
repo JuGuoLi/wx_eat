@@ -1,0 +1,46 @@
+<!--pages/cart/cart.wxml-->
+<view class='whole'>
+  <text>menu</text>
+  <text>菜单</text>
+  <swiper class='swiper'
+  indicator-dots="true"
+  autoplay="true"
+  interval="3000"
+  duration="1000"
+  circular='true'
+>
+    <block wx:for="{{imgUrls}}"  wx:key='{{index}}'>
+      <swiper-item>
+        <image src="{{item.pic}}" class="slide-image" lazy-load mode='aspectFit' />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <scroll-view
+    scroll-y
+    style="height:50vh;"
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower"
+    enable-back-to-top='true'
+    scroll-top="0"
+  >
+    <view class='content' wx:for='{{cartList}}' wx:key='{{index}}'>
+      <view class='cn'>
+        <text>{{item.title}}</text>
+        <text>¥{{item.price}}元</text>
+      </view>
+      <view class='eng'>
+        <text>{{item.eng}}</text>
+      </view>
+     </view>
+  </scroll-view>  
+  <!-- <view class='content' wx:for='{{cartList}}' wx:key='{{index}}'>
+    <view class='cn'>
+      <text>{{item.title}}</text>
+      <text>¥{{item.price}}元</text>
+    </view>
+    <view class='eng'>
+      <text>{{item.eng}}</text>
+    </view>
+  </view> -->
+</view>

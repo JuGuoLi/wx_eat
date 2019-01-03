@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class='whole'>
+  <text bindtap='handlePhone'>电话预定</text>
+  <text bindtap='jumpCart'>菜单</text>
+</view>

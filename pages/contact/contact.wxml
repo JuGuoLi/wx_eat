@@ -1,0 +1,16 @@
+<!--pages/contact/contact.wxml-->
+<!-- <text>pages/contact/contact.wxml</text> -->
+<view class='whole'>
+   <view>
+    <image src='https://6561-eat-servic-5b1cd1-1258437110.tcb.qcloud.la/img/contact_bg.jpg' lazy-load='true' mode='aspectFit'></image>
+   </view>
+   <view class='title'>
+    <text>麦香小馆,,</text>
+  </view>
+  <view>联系电话</view>
+  <view>000-00000000</view>
+  <view>联系地址</view>
+  <view>XXX省XXX市XXX县XXX路XXX号</view>
+  <view>联系邮箱</view>
+  <view>XXXXXX@XXX.com</view>
+</view>
